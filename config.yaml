@@ -1,0 +1,10 @@
+server:
+  port: 8001
+  pre-fork: false
+
+database:
+  host: localhost
+  port: 5432
+  db-class: postgres
+  username: nxy_lab
+  password: 12345
