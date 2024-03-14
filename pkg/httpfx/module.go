@@ -1,6 +1,11 @@
 package httpfx
 
-import "go.uber.org/fx"
+import (
+	"github.com/gofiber/fiber/v2"
+	"go.uber.org/fx"
+)
+
+var Routes *map[string]fiber.Handler
 
 var Module = fx.Module(
 	"httpfx",

@@ -1,4 +1,4 @@
-package handler
+package product
 
 import "github.com/gofiber/fiber/v2"
 
@@ -6,8 +6,8 @@ type Product struct {
 }
 
 func (product Product) GetOne(c *fiber.Ctx) error {
-	_ = c.Params("id")
-	return nil
+	productId := c.Params("id")
+	return c.SendString(productId)
 }
 
 func (product Product) GetAll(c *fiber.Ctx) error {

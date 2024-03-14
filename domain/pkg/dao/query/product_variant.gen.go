@@ -6,6 +6,7 @@ package query
 
 import (
 	"context"
+	"github.com/noxymon/ecomm-go/domain/pkg/dao/model"
 
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
@@ -15,8 +16,6 @@ import (
 	"gorm.io/gen/field"
 
 	"gorm.io/plugin/dbresolver"
-
-	"github.com/noxymon/ecomm-go/domain/catalogue/pkg/dao/model"
 )
 
 func newProductVariant(db *gorm.DB, opts ...gen.DOOption) productVariant {

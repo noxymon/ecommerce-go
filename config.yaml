@@ -6,5 +6,6 @@ database:
   host: localhost
   port: 5432
   db-class: postgres
-  username: nxy_lab
+  username: nxy_labs
   password: 12345
+  schema: ecomm_catalogue
